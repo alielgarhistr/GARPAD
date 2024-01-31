@@ -1,0 +1,17 @@
+<!-- views/arcgis_integration_views.xml -->
+<odoo>
+    <record id="view_arcgis_integration_form" model="ir.ui.view">
+        <field name="name">arcgis.integration.form</field>
+        <field name="model">arcgis.integration</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="arcgis_username"/>
+                    <field name="arcgis_password"/>
+					<field name="map_html" readonly="1"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
